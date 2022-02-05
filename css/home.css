@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    font-family: 'Heebo', sans-serif;
 }
 
 ul,
@@ -16,7 +17,6 @@ h1 {
     margin: 0;
     padding: 0;
 }
-
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -80,10 +80,11 @@ a {
 .nav__list {
     display: flex;
 }
-
+.nav__link{
+    font-weight: 700;
+}
 .nav__item {
     padding: 15px;
-    font-family: 'Heebo', sans-serif;
 }
 
 .main {
@@ -93,8 +94,8 @@ a {
 
 .main__content-h1 {
     font-size: 44px;
-    font-family: 'Heebo', sans-serif;
     color: black;
+    font-weight: 700;
 }
 
 .main__content-info-text {
@@ -116,7 +117,9 @@ a {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-
+.main__content-button-text{
+    font-weight: 500;
+}
 .main__content-button {
     width: 208px;
     height: 47px;
@@ -143,9 +146,10 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 396px;
 }
-
+.post__view-link{
+    color: #00A8CC;
+}
 .post {
     border-radius: 4px;
     height: 295px;
@@ -157,16 +161,16 @@ a {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
-
 .post__title {
+    font-weight: 700;
     width: 100%;
     height: 85px;
     font-size: 26px;
     text-align: left;
-    font-family: 'Heebo', sans-serif;
 }
 
 .post__date {
+    font-weight: 400;
     height: 34px;
     font-size: 18px;
 }
@@ -178,8 +182,16 @@ a {
     height: 100vh;
 }
 .title{
+    font-weight: 400;
+    height: 60px;
     font-size: 22px;
-    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.post__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .work__list{
     display: flex;
@@ -216,7 +228,7 @@ a {
 }
 .work__content-title{
     font-size: 30px;
-    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
 }
 .work__content-date{
     display: flex;
@@ -233,15 +245,21 @@ a {
     margin: 15px 0 15px;
 }
 .work__content-date-text{
+    font-weight: 700;
     color: white;
     font-size: 18px;
 }
 .work__content-type{
+    font-weight: 400;
+    color: #8695A4;
     margin-left: 28px;
     font-size: 20px;
-    font-family: inherit;
+}
+.work__content-text{
+    font-weight: 400;
 }
 .footer{
+    font-family: inherit;
     height: 182px;
     display: flex;
     align-items: center;
