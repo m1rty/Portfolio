@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Heebo', sans-serif;
+}
+
+ul,
+li,
+p,
+h1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1152px;
+}
+.header{
+    width: 100%;
+}
+.work__title{
+    font-size: 44px;
+    font-weight: 700;
+}
+.header-container {
+    max-width: 1032px;
+    display: flex;
+    justify-content: flex-end;
+}
+span{
+    color: #FF6464;
+}
+.nav {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+
+.nav__list {
+    display: flex;
+}
+.nav__link{
+    font-weight: 700;
+}
+.nav__item {
+    padding: 15px;
+}
+.work{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    height: 180px;
+}
+.work__content{
+    display: flex;
+    flex-direction: column;
+}
+.work__img-wrap{
+    margin-right: 16px;
+    width: 246px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.line{
+    margin-top: 32px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.work__content-info{
+    display: flex;
+    align-items: center;
+}
+.work__content-title{
+    font-size: 30px;
+    font-weight: 700;
+}
+.work__content-date{
+    display: flex;
+    justify-content: center;
+    width: 62px;
+    height: 25px;
+    background-color: #142850;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    margin: 15px 0 15px;
+}
+.work__content-date-text{
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+}
+.work__content-type{
+    font-weight: 400;
+    color: #8695A4;
+    margin-left: 28px;
+    font-size: 20px;
+}
+.work__content-text{
+    font-weight: 400;
+}
+.footer{
+    font-family: inherit;
+    height: 182px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
