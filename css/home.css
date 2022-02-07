@@ -31,41 +31,13 @@ a {
     margin: 0 auto;
     max-width: 1152px;
 }
-
-
-@media (min-width: 575.98px) {
-    .container {
-        max-width: 540px;
-        margin: auto;
-        padding: 0;
-    }
+.header{
+    width: 100%;
 }
-
-@media (min-width: 767.98px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 991.98px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1199.98px) {
-    .container {
-        max-width: 1140px;
-    }
-}
-
 .header-container {
     max-width: 1032px;
-}
-
-.main {
-    height: 100vh;
-    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav {
@@ -87,27 +59,28 @@ a {
     padding: 15px;
 }
 
-.main {
+.about {
     display: flex;
     align-items: center;
+    height: 100vh;
+    background: rgb(255, 255, 255);
 }
 
-.main__content-h1 {
+.about__content-title {
     font-size: 44px;
     color: black;
     font-weight: 700;
 }
 
-.main__content-info-text {
+.about__content-info-text {
     width: 70%;
 }
 
-.main__content-info {
+.about__content-info {
     font-size: 19px;
     display: flex;
 }
-
-.main__content-img-wrap {
+.about__content-img{
     width: 243px;
     height: 243px;
     border-radius: 50%;
@@ -117,12 +90,11 @@ a {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.main__content-button-text{
+.about__content-button-text{
     font-weight: 500;
 }
-.main__content-button {
-    width: 208px;
-    height: 47px;
+.about__content-button {
+    padding: 14px;
     border-radius: 2px;
     background-color: #FF6464;
     -webkit-border-radius: 2px;
@@ -132,7 +104,7 @@ a {
     border: none;
 }
 
-.main__content-button-text {
+.about__content-button-text {
     color: white;
     font-size: 20px;
 }
@@ -173,7 +145,7 @@ a {
     font-weight: 400;
     height: 34px;
     font-size: 18px;
-}
+}   
 
 .post__text {
     height: 117px;
@@ -232,7 +204,6 @@ a {
 }
 .work__content-date{
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 62px;
     height: 25px;
