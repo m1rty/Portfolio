@@ -24,6 +24,7 @@ a {
 
 .wrapper {
     height: 100%;
+    overflow: hidden;   
 }
 
 .container {
@@ -104,7 +105,7 @@ a {
     font-size: 19px;
     display: flex;
 }
-.about__content-img{
+.about__content-img-wrap{
     width: 243px;
     height: 243px;
     border-radius: 50%;
@@ -113,6 +114,11 @@ a {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    flex-shrink: 0;
+}
+.about__content-img{
+    height: 100%;
+    width: 100%;
 }
 @media (max-width: 480px){
     .header__burger{
@@ -130,6 +136,9 @@ a {
     }
     .header{
         padding-top: 20px;
+    }
+    .about__content{
+        align-items: center;
     }
 }
 
@@ -158,7 +167,7 @@ a {
 }
 
 .posts {
-    height: 396px;
+    min-height: 396px;
     background: #EDF7FA;
 }
 
@@ -180,6 +189,7 @@ a {
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    margin-bottom: 17px;
 }
 .post__title-text {
     font-weight: 700;
@@ -188,7 +198,11 @@ a {
     font-size: 26px;
     text-align: left;
 }
-
+.post__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .post__date {
     font-weight: 400;
     height: 34px;
@@ -204,9 +218,18 @@ a {
     .post__list{
         flex-direction: column;
     }
-}
-.works{
-    height: 100vh;
+    .posts{
+        padding: 0px 0px 38px;
+    }
+    .post:last-child{
+        margin-bottom: 0;
+    }
+    .post__view{
+        display: none;
+    }
+    .post__info{
+        justify-content: center;
+    }
 }
 .title{
     font-weight: 400;
@@ -215,22 +238,17 @@ a {
     display: flex;
     align-items: center;
 }
-.post__info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .work__list{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
 }
 .work{
     margin-top: 30px;
     display: flex;
     width: 100%;
-    height: 180px;
+    min-height: 180px;
 }
 .work__content{
     display: flex;
@@ -299,12 +317,14 @@ a {
 }
 @media (max-width: 480px){
     .work{
-        padding: 23px 17px 13px;
+        padding: 0px 13px 17px;
         flex-direction: column;
-        flex: 0 0 340px;
+        flex: 0 0 100%;
     }
-    .featured__works{
+    .work__list{
         display: flex;
         overflow: auto;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 }
