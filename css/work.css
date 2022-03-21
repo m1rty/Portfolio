@@ -125,10 +125,22 @@ span{
 .work__content-text{
     font-weight: 400;
 }
+
 .footer{
     font-family: inherit;
     height: 182px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.footer__content{
+    max-width: 300px;
+}
+.footer__copyright{
+    text-align: center;
+}
+.footer__icon-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
 }
