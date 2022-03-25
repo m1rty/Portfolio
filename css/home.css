@@ -148,10 +148,6 @@ a {
         align-items: center;
     }
 }
-
-@media (max-width: 480px){
-    
-}
 .about__content-button-text{
     font-weight: 500;
 }
