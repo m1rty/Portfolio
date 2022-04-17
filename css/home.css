@@ -3,7 +3,6 @@
 }
 
 body {
-    height: 100%;
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -25,9 +24,7 @@ a {
 
 .wrapper {
     height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;   
 }
 
 .container {
@@ -52,11 +49,7 @@ a {
     justify-content: flex-end;
     font-size: 20px;
 }
-.main{
-    display: flex;
-    flex: 1 0 auto;
-    flex-direction: column;
-}
+
 .nav__list {
     display: flex;
 }
@@ -147,6 +140,10 @@ a {
     .about__content{
         align-items: center;
     }
+}
+
+@media (max-width: 480px){
+    
 }
 .about__content-button-text{
     font-weight: 500;
@@ -306,7 +303,6 @@ a {
     font-weight: 400;
 }
 .footer{
-    flex: 0 0 auto;
     font-family: inherit;
     height: 182px;
     display: flex;
@@ -319,12 +315,6 @@ a {
 .footer__copyright{
     text-align: center;
 }
-.footer__icon-list{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 16px;
-}
-
 @media (max-width: 480px){
     .work{
         padding: 0px 13px 17px;
