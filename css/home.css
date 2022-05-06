@@ -309,6 +309,10 @@ a {
     align-items: center;
     justify-content: center;
 }
+.footer__icon-list{
+    display: flex;
+    justify-content: space-between;
+}
 .footer__content{
     max-width: 300px;
 }
