@@ -94,7 +94,21 @@ a {
     align-items: center;
     height: inherit;
 }
-
+.warning{
+    display: none;
+    position: fixed;
+    font-size: 30px;
+    background-color: rgba(95, 27, 27,0.6);
+    top: 50%;
+    right: 43%;
+    color: red;
+    width: 300px;
+    text-align: center;
+    height: 100;
+}
+.warning:active{
+    display: block;
+}
 .about__content-title {
     font-size: 44px;
     color: black;
@@ -117,6 +131,7 @@ a {
     flex-shrink: 0;
 }
 .about__content-img{
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }
