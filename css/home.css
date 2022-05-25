@@ -95,10 +95,6 @@ a {
     align-items: center;
     height: inherit;
 }
-
-.warning:active{
-    display: block;
-}
 .about__content-title {
     font-size: 44px;
     color: black;
@@ -147,9 +143,6 @@ a {
     }
 }
 
-@media (max-width: 480px){
-    
-}
 .about__content-button-text{
     font-weight: 500;
 }
