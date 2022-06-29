@@ -1,0 +1,90 @@
+.special-offer__item-content {
+    height: 100%;
+    width: 227px;
+}
+
+.special-offers__list {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.special-offer__item {
+    font-family: 'Mulish', sans-serif;
+    padding: 28px 24px;
+    background-size: cover;
+    position: relative;
+}
+
+.special-offer__item:nth-child(1) {
+    background-image: url(/img/offer__background.png);
+}
+
+.special-offer__item:nth-child(2) {
+    background-image: url(/img/sp-offer-2.png);
+}
+
+.special-offer__item .trending__item-sticker {
+    border-radius: 0 0 0 5px;
+    width: 64px;
+    height: 23px;
+    font-size: 12px;
+    top: 0;
+    right: 0;
+}
+.special-offer__item .trending__item-name {
+    margin-bottom: 11px;
+    font-size: 22px;
+    font-size: 500;
+}
+
+.special-offer__item-description {
+    color: #757575;
+    margin-bottom: 23px;
+    font-size: 12px;
+}
+
+.special-offer__item .prices {
+    margin-bottom: 31px;
+}
+
+
+.trending__item-old-price {
+    margin-right: 20px;
+}
+
+.special-offer__item .header__baner-button {
+    border: none;
+    font-size: 12px;
+    width: 91px;
+    height: 26px;
+    border-radius: 2px;
+}
+
+.special-offer__time {
+    display: flex;
+}
+
+.time__item {
+    text-align: center;
+    background-color: #7AC751;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-right: 18px;
+}
+
+.time__item-type {
+    margin-top: 3px;
+    font-size: 6px;
+}
+
+.time__item-number {
+    font-size: 14px;
+    font-weight: 600;
+}

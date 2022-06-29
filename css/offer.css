@@ -1,0 +1,73 @@
+.offer__list {
+    height: 511px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.offer__item {
+    height: 247px;
+    padding: 49px 24px;
+}
+
+.offer__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #555555;
+    font-weight: 400;
+}
+
+.offer__item--big .offer__title {
+    font-weight: 600;
+}
+
+.offer__price {
+    font-size: 20px;
+    font-weight: 400;
+    color: #7AC751;
+    margin-bottom: 13px;
+}
+
+.offer__details {
+    color: #757575;
+    position: relative;
+}
+
+.offer__details::after {
+    content: '';
+    display: block;
+    background-image: url(/img/star.png);
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 4px;
+    left: 85px;
+}
+
+.offer__price-span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.offer__item--big {
+    padding: 49px 31px;
+    background: url(/img/Mask\ Group.svg);
+    height: 100%;
+    flex: 1 1 669px;
+}
+
+.offer__small-list {
+    flex: 1 1 485px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.item-top {
+    background: url(/img/Rectangle\ 33.svg) no-repeat;
+}
+
+.item-bottom {
+    background: url(/img/Rectangle\ 34.png);
+}

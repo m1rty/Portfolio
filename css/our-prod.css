@@ -1,0 +1,113 @@
+.our-products__list {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 45px;
+    grid-template-columns: repeat(auto-fill, minmax(267px, 1fr));
+}
+
+.our-products__item-type {
+    margin-bottom: 7px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgba(117, 117, 117, 0.71);
+
+}
+
+.our-products__img-wrap {
+    position: relative;
+    transition: 2s all;
+    overflow: hidden;
+    height: 287px;
+}
+.our-products__preview{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.our-products__item-name {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #555555;
+}
+.our-products__item-description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page__flipper {
+    align-items: center;
+    margin-top: 50px;
+    height: 44px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.page__flipper-button {
+    cursor: pointer;
+    color: white;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    margin-right: 143px;
+    background-color: #7AC751;
+    height: 100%;
+    width: 161px;
+}
+
+.page__flipper-button::after {
+    content: '';
+    display: block;
+    background: url(/img/button-arrow.svg);
+    width: 14px;
+    height: 12px;
+    margin-left: 10px;
+}
+
+.page__flipper-counter {
+    color: #757575;
+}
+
+.counter__input {
+    text-align: center;
+    margin-left: 9px;
+    margin-right: 19px;
+    height: 29px;
+    background-color: #F8FAFB;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    color: #757575;
+    width: 58px;
+    outline: none;
+}
+
+.page__flipper-arrows {
+    display: flex;
+    width: 58px;
+    height: 29px;
+    margin-left: 23px;
+    background-color: #7AC751;
+    border-radius: 2px;
+}
+
+.arrow__left {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.arrow__right {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}

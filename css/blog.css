@@ -1,172 +1,73 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    font-family: 'Heebo', sans-serif;
-}
-
-ul,
-li,
-p,
-h1 {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-.wrapper {
+.blog__item-info{
+    position: relative;
+    color: white;
     height: 100%;
-}
-span{
-    color: #FF6464;
-}
-.container {
-    padding: 0 15px;
-    margin: 0 auto;
-    max-width: 1152px;
-}
-.header__container {
-    max-width: 1032px;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: end;
+    padding: 44px 30px;
 }
-.header__burger{
-    position: relative;
-    display: none;
-    width: 30px;
+.blog__item-list{
+    gap: 22px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,455px);
+}
+.blog__item-classif{
+    display: flex;
+    margin-bottom: 20px;
     align-items: center;
 }
-.header__burger-el{
-    height: 2px;
-    width: 100%;
-    background-color: black;
-    position: relative;
+.blog__item-type{
+    width: min-content;
+    padding: 4px 7px;
+    height: 23px;
+    margin-right: 5px;
+    background-color: white;
+    border-radius: 2px;
+    color: #7AC751;
+    font-size: 12px;
 }
-.header__burger-el::before, .header__burger-el::after{
+.blog__item-type-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 500;
+}
+.blog__item-type-text::before{
+    content: '';
+    display: block;
+    background: url(/img/Group.svg);
+    width: 13px;
+    height: 13px;
+    margin-right: 6px;
+}
+.blog__item{
+    font-family: 'Mulish', sans-serif;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.blog__name{
+    margin-bottom: 20px;
+    font-size: 39px;
+    font-weight: 600;
+}
+.blog__details{
+    font-size: 14px;
+    font-weight: 500;
+}
+.blog__item-background{
     position: absolute;
-    height: 2px;
     width: 100%;
-    background-color: black;
-    content: ' ';
+    height: 100%;
+    top: 0;
+    left: 0;
 }
-.header__burger-el::after{
-    top: 8px;
-}
-.header__burger-el::before{
-    top: -8px;
-}
-.nav {
-    background: rgb(255, 255, 255);
+.blog__item-img{
+    object-fit: cover;
     width: 100%;
-    height: max-content;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 20px;
-}
-.h1-title{
-    margin-top: 90px;
-}
-.nav__list {
-    display: flex;
-}
-.nav__link{
-    font-weight: 700;
-}
-.nav__item {
-    padding: 15px;
-}
-.work__list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-}
-.post__date {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    height: 34px;
-    font-size: 18px;
-}
-.blog__title{
-    font-weight: 700;
-    font-size: 44px;
-}
-.work{
-    display: flex;
-    width: 100%;
-    min-height: 150px;
-}
-.work__content{
-    display: flex;
-    flex-direction: column;
-}
-.work__img-wrap{
-    margin-right: 16px;
-    width: 246px;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
-}
-.line{
-    border-bottom: 1px solid #E0E0E0;
-    margin-bottom: 42px;
-}
-.work__content-info{
-    display: flex;
-    align-items: center;
-}
-.work__content-title{
-    font-size: 30px;
-    font-weight: 700;
-}
-.work__content-type{
-    font-weight: 400;
-    color: #8695A4;
-    margin-left: 28px;
-    font-size: 20px;
-}
-.work__content-text{
-    font-weight: 400;
-}
-.footer{
-    font-family: inherit;
-    height: 182px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.footer__icon-list{
-    display: flex;
-    justify-content: space-between;
-}
-.footer__content{
-    max-width: 300px;
-}
-.footer__copyright{
-    text-align: center;
-}
-@media (max-width: 480px){
-    .nav{
-        display: none;
-    }
-    .header__burger{
-        display: flex;
-    }
-    .header{
-        padding-top: 20px;
-    }
-    .h1-title{
-        margin-top: 45px;
-    }
+    height: 100%;
 }

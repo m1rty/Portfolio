@@ -1,0 +1,45 @@
+.title {
+    margin-bottom: 45px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #555555;
+    text-align: center;
+    margin-top: 120px;
+    text-transform: uppercase;
+}
+.trending__item-sticker {
+    font-family: 'Mulish', sans-serif;
+    position: absolute;
+    width: 45px;
+    height: 20px;
+    border-radius: 0 0 5px 0;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sticker-new {
+    background-color: #00B7F1;
+}
+
+.sticker-sale {
+    background-color: #7AC751;
+}
+
+.sticker-discount {
+    background-color: #FF6868;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo__text{
+    font-size: 24px;
+    color: #555555;
+    font-weight: 500;
+}
+.logo__img{
+    width: 32px;
+    height: 39px;
+}
